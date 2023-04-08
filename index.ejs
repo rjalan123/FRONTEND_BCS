@@ -1,0 +1,41 @@
+
+<%- include('include/_header') %>
+
+<!-- Main Site -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New Client <i class="fas fa-user"></i></span>
+            </a>
+        </div>
+
+        <!-- form handling -->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Start date</th>
+                        <th>End date</th>
+                        <th>Project name</th>
+                        <th>Project Id</th>
+                        <th>Sales Id</th>
+                        <th>Plan Name</th>
+                        <th>Plan Id</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                   
+<%- include('include/_show') %> 
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<!-- /Main Site -->
+
+
+</html>
+
+<%- include('include/_footer') %>
